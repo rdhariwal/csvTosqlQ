@@ -1,6 +1,6 @@
 # query your csv files like sql
 
-###Prerequistes
+### Prerequistes
 * Sqlite3 
     * for linux: `sudo apt-get install sqlite3 libsqlite3-dev`
     * for mac: `brew install sqlite3`
@@ -44,7 +44,7 @@ Drop table by:
 DROP TABLE cities;
 ````
 
-Create table:
+Create cities table again table:
 ````
 CREATE TABLE cities (
   name Varchar,
@@ -52,7 +52,7 @@ CREATE TABLE cities (
 );
 ````
 
-Import csv file again but now in an existing table with population as Int and no headers
+Import csv file again but now in an existing table with population as Int and no headers (if table already exists then first row of csv becomes first data row of the table)
 ````
 .import city_no_headers.csv cities
 ````
@@ -65,6 +65,8 @@ SELECT name, population FROM cities order by population asc;
 SELECT name, population FROM cities order by name asc;
 SELECT name, population FROM cities order by name desc;
 ````
+
+For more sql syntax see documentation [here](https://www.w3schools.com/sql/sql_syntax.asp)
 
 
     
