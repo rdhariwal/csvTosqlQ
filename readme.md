@@ -1,7 +1,7 @@
 # query your csv files like sql
 
 ### Prerequistes
-* Sqlite3 
+* Make sure Sqlite3 is already installed 
     * for linux: `sudo apt-get install sqlite3 libsqlite3-dev`
     * for mac: `brew install sqlite3`
 
@@ -13,7 +13,7 @@ sqlite3
 use the `.mode` command as follows to set it to csv:
 
 `````
-sqlite> .mode csv
+.mode csv
 `````
  use the `.import FILE TABLE` command to import the data from the city.csv file into the cities table.
  ````` 
